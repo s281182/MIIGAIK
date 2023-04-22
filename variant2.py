@@ -1,4 +1,3 @@
-import streamlit as st
 def variant2():
     with open("data.csv") as file:
         male = 0
