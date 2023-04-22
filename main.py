@@ -26,10 +26,10 @@ st.text(user_name(var))
 if var == "var1":
     variant1.variant1()
 elif var == "var2":
-    st.text("Вариант 2, выполнила Гочияева Л.")
+    pass
     #var2()
 elif var == "var3":
-    st.text("Вариант 3, выполнила Исмагилова Э.")
+    pass
     #var3()
 elif var == "var4":
     variant4.variant4()
