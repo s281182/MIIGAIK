@@ -2,7 +2,7 @@ import streamlit as st
 import csv
 import variant1
 import variant2
-#import var3.ry
+import variant3
 import variant4
 
 def user_name(par):
@@ -11,7 +11,7 @@ def user_name(par):
     elif par=="var2":
         return "Вариант 2, выполнила Гочияева Л., доля выживших среди пассажиров выбранного пола."
     elif par=="var3":
-        return "Вариант 3, выполнила Исмагилова Э."
+        return "Вариант 3, выполнила Исмагилова Э., спасенные с именами начинающихся на введенный текст."
     elif par=="var4":
         return "Вариант 4, выполнил Бутов С., списки спасенных/погибши пассажиров с билетами нулевой стоимости."
 
@@ -28,7 +28,6 @@ if var == "var1":
 elif var == "var2":
     variant2.variant2()
 elif var == "var3":
-    pass
-    #var3()
+    variant3.variant3()
 elif var == "var4":
     variant4.variant4()
