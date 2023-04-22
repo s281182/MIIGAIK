@@ -15,7 +15,7 @@ def user_name(par):
     elif par=="var4":
         return "Вариант 4, выполнил Бутов С., данные спасенных/погибши пассажиров с билетами нулевой стоимости."
 
-
+st.set_page_config(layout="wide")
 st.title("Команда №4, практическая работа 10")
 var=st.selectbox(
     label="Выбери вариант:",
