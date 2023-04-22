@@ -22,9 +22,8 @@ var=st.selectbox(
     options=["var1","var2","var3","var4"],
     format_func=user_name
 )
-
+st.text(user_name(var))
 if var == "var1":
-    st.text("Вариант 1, выполнил Горелкин А.")
     variant1.variant1()
 elif var == "var2":
     st.text("Вариант 2, выполнила Гочияева Л.")
@@ -33,5 +32,4 @@ elif var == "var3":
     st.text("Вариант 3, выполнила Исмагилова Э.")
     #var3()
 elif var == "var4":
-    st.text("Вариант 4, выполнил Бутов С.")
     variant4.variant4()
