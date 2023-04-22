@@ -1,3 +1,5 @@
+import streamlit as st
+import csv
 def variant4():
   ch = st.radio("Поиск пассажиров с билетом нулевой стоимости:", ["спасенные","погибшие"])
   with open('titanic.csv') as file:
