@@ -19,7 +19,7 @@ def variant2():
                     survived_female += 1
     x = round(survived_female / female, 2)
     y = round(survived_male / male, 2)
-    choise = st.radio('Выберите пол пассажира', ['муж', 'жен'])
+    choise = st.radio('Выберите пол пассажира:', ['муж', 'жен'])
     if choise == 'муж':
         st.success(f'Доля выживших среди мужчин: {y}')
     else:
