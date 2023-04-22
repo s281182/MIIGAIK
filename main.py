@@ -24,7 +24,7 @@ var=st.selectbox(
 
 if var == "var1":
     st.text("Вариант 1, выполнил Горелкин А.")
-    variant1()
+    variant1.variant1()
 elif var == "var2":
     st.text("Вариант 2, выполнила Гочияева Л.")
     #var2()
