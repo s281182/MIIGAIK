@@ -1,7 +1,7 @@
 import streamlit as st
 import csv
 import variant1
-#import var2.ry
+import variant2
 #import var3.ry
 import variant4
 
@@ -26,8 +26,7 @@ st.text(user_name(var))
 if var == "var1":
     variant1.variant1()
 elif var == "var2":
-    pass
-    #var2()
+    variant2.variant2()
 elif var == "var3":
     pass
     #var3()
