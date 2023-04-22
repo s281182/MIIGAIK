@@ -1,8 +1,9 @@
 import streamlit as st
+import csv
 import variant1
 #import var2.ry
 #import var3.ry
-#import var4.ry
+import variant4
 
 def user_name(par):
     if par=="var1":
@@ -33,4 +34,4 @@ elif var == "var3":
     #var3()
 elif var == "var4":
     st.text("Вариант 4, выполнил Бутов С.")
-    #var4()
+    variant4.variant4()
