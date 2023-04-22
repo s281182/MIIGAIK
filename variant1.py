@@ -2,8 +2,7 @@ import streamlit as st
 import csv
 
 def variant1():
-  st.header("Бутов С.А.")
-  with open('titanic.csv') as file:
+  with open('data.csv') as file:
       file_reader = csv.reader(file, delimiter=",")
       surv30 = 0
       surv60 = 0
