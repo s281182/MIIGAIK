@@ -1,5 +1,5 @@
 import streamlit as st
-#import var1.ry
+import variant1.py
 #import var2.ry
 #import var3.ry
 #import var4.ry
@@ -24,7 +24,7 @@ var=st.selectbox(
 
 if var == "var1":
     st.text("Вариант 1, выполнил Горелкин А.")
-    #var1()
+    variant1()
 elif var == "var2":
     st.text("Вариант 2, выполнила Гочияева Л.")
     #var2()
