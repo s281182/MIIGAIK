@@ -1,6 +1,5 @@
 import streamlit as st
 def variant2():
-    st.subheader('Посчитаем долю выживших среди пассажиров выбранного пола:')
     with open("data.csv") as file:
         male = 0
         female = 0
