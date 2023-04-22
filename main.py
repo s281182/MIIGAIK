@@ -1,5 +1,5 @@
 import streamlit as st
-import variant1.py
+import variant1
 #import var2.ry
 #import var3.ry
 #import var4.ry
