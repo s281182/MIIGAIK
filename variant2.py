@@ -1,25 +1,27 @@
 import streamlit as st
+
+def get_result(data, sex):
+        if sex == 'муж':
+            sex = 'male'
+        else:
+            sex = 'female'
+        all_sex = 0
+        survived = 0
+        for line in data:
+            lst = line.rstrip().split(",")
+            if lst[5] == sex:
+                all_sex += 1
+            if lst[1] == "1" and lst[5] == sex:
+                survived += 1
+        return round(survived / all_sex, 2)
+
 def variant2():
     with open("data.csv") as file:
-        male = 0
-        female = 0
-        survived_male = 0
-        survived_female = 0
-        for line in file.readlines()[1:]:
-            lst = line.rstrip().split(",")
-            if lst[5] == "male":
-                male += 1
-            else:
-                female += 1
-            if lst[1] == "1":
-                if lst[5] == "male":
-                    survived_male += 1
-                else:
-                    survived_female += 1
-    x = round(survived_female / female, 2)
-    y = round(survived_male / male, 2)
-    choise = st.radio('Выберите пол пассажира:', ['муж', 'жен'])
-    if choise == 'муж':
-        st.success(f'Доля выживших среди мужчин: {y}')
+        data = file.readlines()
+
+    sex = st.radio('Выберите пол спасенных пассажиров:', ['муж', 'жен'])
+    if sex == 'муж':
+        s = 'мужчин'
     else:
-        st.warning(f'Доля выживших среди женщин: {x}')
+        s = 'женщин'
+    st.text(f'Доля выживших среди {s}: {get_result(data, sex)}')
