@@ -16,4 +16,4 @@ def variant4():
     ch = st.radio("Поиск пассажиров с билетом нулевой стоимости:", ["спасенные","погибшие"])
     with open('data.csv') as file:
         file_reader = csv.reader(file, delimiter=",")
-    pas_list(file_reader,ch)
+        pas_list(file_reader,ch)
