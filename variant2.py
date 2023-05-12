@@ -1,19 +1,21 @@
 import streamlit as st
 
+
 def get_result(data, sex):
-        if sex == 'муж':
-            sex = 'male'
-        else:
-            sex = 'female'
-        all_sex = 0
-        survived = 0
-        for line in data:
-            lst = line.rstrip().split(",")
-            if lst[5] == sex:
-                all_sex += 1
-            if lst[1] == "1" and lst[5] == sex:
-                survived += 1
-        return round(survived / all_sex, 2)
+    if sex == 'муж':
+        sex = 'male'
+    else:
+        sex = 'female'
+    all_sex = 0
+    survived = 0
+    for line in data:
+        lst = line.rstrip().split(",")
+        if lst[5] == sex:
+            all_sex += 1
+        if lst[1] == "1" and lst[5] == sex:
+            survived += 1
+    return round(survived / all_sex, 2)
+
 
 def variant2():
     with open("data.csv") as file:
