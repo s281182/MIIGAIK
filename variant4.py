@@ -19,7 +19,7 @@ def variant4():
     with open('data.csv') as file:
         data = file.readlines()[1:]
     list_p = pas_list(data, ch)
-    st.subheader("Всего " + ch + " с билетами нулевой стоимости: " + str(len(list)))
+    st.subheader("Всего " + ch + " с билетами нулевой стоимости: " + str(len(list_p)))
     for lt in list_p:
         if ch == "спасенные":
             st.success(lt)
