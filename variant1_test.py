@@ -55,22 +55,22 @@ output6 = (0, 0, 0, 0)
 def test1():
     assert calculate_dataframe_stats(input1) == output1
 
-    
+   
 def test2():
     assert calculate_dataframe_stats(input2) == output2
 
-    
+
 def test3():
     assert calculate_dataframe_stats(input3) == output3
 
-    
+
 def test4():
     assert calculate_dataframe_stats(input4) == output4
 
-    
+
 def test5():
     assert calculate_dataframe_stats(input5) == output5
 
-    
+
 def test6():
     assert calculate_dataframe_stats(input6) == output6
