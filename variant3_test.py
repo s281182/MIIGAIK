@@ -1,4 +1,4 @@
-from main import *
+from variant3 import get_pass_list
 
 
 def test_pass_list_all():
