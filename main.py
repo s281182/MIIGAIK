@@ -5,14 +5,15 @@ import variant2
 import variant3
 import variant4
 
+
 def user_name(par):
-    if par=="var1":
+    if par == "var1":
         return "Вариант 1"
-    elif par=="var2":
+    elif par == "var2":
         return "Вариант 2"
-    elif par=="var3":
+    elif par == "var3":
         return "Вариант 3"
-    elif par=="var4":
+    elif par == "var4":
         return "Вариант 4"
 
 st.set_page_config(layout="wide")
