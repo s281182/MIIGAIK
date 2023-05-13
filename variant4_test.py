@@ -1,4 +1,4 @@
-from variant4 import *
+from variant4 import pas_list
 
 
 def test_saved_free():
