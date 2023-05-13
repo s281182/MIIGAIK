@@ -1,24 +1,24 @@
 import streamlit as st
-import csv
 
 
 def pas_list(data,ch):
     list=[]
     for line in data:
+        lst = line.rstrip().split(",")
         if ch == "спасенные":
-            if line[9] == '0' and line[1] == '1':
-                list.append("Имя: " + line[3] + ", пол: " + line[4] + ", возраст: " + line[5])
+            if lst[10] == '0' and lst[1] == '1':
+                list.append("Имя: " + lst[3] + " " + lst[4] + ", пол: " + lst[5] + ", возраст: " + lst[6])
         else:
-            if line[9] == '0' and line[1] == '0':
-                list.append("Имя: " + line[3] + ", пол: " + line[4] + ", возраст: " + line[5])
+            if lst[10] == '0' and lst[1] == '0':
+                list.append("Имя: " + lst[3] + " " + lst[4] + ", пол: " + lst[5] + ", возраст: " + lst[6])
     return list
 
 
 def variant4():
     ch = st.radio("Поиск пассажиров с билетом нулевой стоимости:", ["спасенные","погибшие"])
     with open('data.csv') as file:
-        file_reader = csv.reader(file, delimiter=",")
-        list=pas_list(file_reader,ch)
+        data = file.readlines()[1:]
+    list=pas_list(data,ch)
     st.subheader("Всего " + ch + " с билетами нулевой стоимости: " + str(len(list)))
     for lt in list:
         if ch == "спасенные":
