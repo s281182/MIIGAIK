@@ -24,9 +24,10 @@ def calculate_dataframe_stats(dataframe):
                     unsurv60 += 1
     return round(surv30/count*100), round(surv60/count*100), round(unsurv30/count*100), round(unsurv60/count*100)
 
+
 def variant1():
-    st.header("Посчитать долю пассажиров Титаника, указав: вести поиск среди спасенных или погибших, "
-			  "искать в возрастных группах до 30 лет или старше 60 лет")
+    st.header("Посчитать долю пассажиров Титаника, указав: вести поиск среди спасенных или погибших,
+              "искать в возрастных группах до 30 лет или старше 60 лет")
     with open("data.csv") as file:
         file_reader = csv.reader(file, delimiter=",")
         dataframe = []
