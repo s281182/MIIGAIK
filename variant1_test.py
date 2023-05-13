@@ -1,4 +1,4 @@
-from main import calculate_dataframe_stats
+from variant1 import calculate_dataframe_stats
 
 # age < 30, > 60, empty age -- max alike
 input1 = [
