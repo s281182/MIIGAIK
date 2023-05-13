@@ -55,7 +55,7 @@ output6 = (0, 0, 0, 0)
 def test1():
     assert calculate_dataframe_stats(input1) == output1
 
-   
+
 def test2():
     assert calculate_dataframe_stats(input2) == output2
 
