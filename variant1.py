@@ -1,6 +1,7 @@
 import streamlit as st
 import csv
 
+
 def calculate_dataframe_stats(dataframe):
     surv30 = 0
     surv60 = 0
