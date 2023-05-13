@@ -33,9 +33,9 @@ def variant1():
         dataframe = []
         for i, line in enumerate(file_reader):
             # skip header
-            if i == 0: continue
+            if i == 0:
+                continue
             dataframe.append(line)
-        count = len(dataframe)
         surv30f, surv60f, unsurv30f, unsurv60f = calculate_dataframe_stats(dataframe)
         ch1 = st.radio("Поиск пассажиров среди:", ["спасенных", "погибших"])
         ch2 = st.radio("Поиск в возрастной группе:", ["до 30 лет", "старше 60 лет"])
